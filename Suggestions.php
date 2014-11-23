@@ -58,12 +58,13 @@
             <?php
                     foreach ($resultArray as $value) { 
             ?>
-                    <li> <?=value?> </li>
+                    <li> <?=$value?> </li>
 
 
             <?php
                     }
             ?>
+            </ul>
 
 
 
