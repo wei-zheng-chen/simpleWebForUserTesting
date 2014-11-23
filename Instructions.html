@@ -1,0 +1,74 @@
+<!DOCTYPE html >
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="style.css" />
+
+<title>Suggestions</title>
+</head>
+
+<body>
+    <div id="page">
+
+        <div id="header">
+        	<h1>Health Alert</h1>  
+        </div>
+
+        <div id="bar">
+            <ul>
+                <li><a href="index.html">Home </a></li>
+                <li><a href="FinishedFeatures.html">Finished Features </a></li>
+                <li><a href="UnfinishedTask.html">Unfinished Tasks </a></li>
+                <li><a href="Suggestions.html">Suggestions </a></li>
+                <li><a href="SurveyApp.html">Survey and App</a></li>
+            </ul>
+        </div>
+
+        <div class="contentTitle"><h1>How To Use The Application!</h1></div>
+        <div class="contentText">
+            <h3> Getting Started </h3>
+            <p> 
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Health Alert</b> is an easy to use applications. The first thing you need to do is get it off the Apple application store. <a href="#"> <b>LINK TO OUR APPLICATION</b></a>
+            </p>
+            <p> 
+                However, as of now, the application is not on the Apple app store. But, you can access the source  of our application at our GitHub repository -
+                <a href="https://github.com/duke-compsci408-fall2014/PropelPro"> <b>HERE</b>.</a>
+                <p>All you have to do is: </p>
+                <ol>
+                    <li>Open up a terminal </li>
+                    <li>cd (directory name) to select the directory that you want to download our source code on</li>
+                    <li>git clone (the ssh key that is given in our repository)</li>
+                    <li>Navigate to the download folder and click Hospital Tabbed App.xcodeproj. This will take you to XCode (make sure to have this install).</li>
+                    <li>Press play and run the iPhone emulation of the app </li> 
+                </ol>
+                <p>Make sure the emulation is of iPhone 6. If there are problems using the git clone command, make sure you have install the developer tools provided by XCode. Downloading and opening XCode the first time should prompt one to install the developer tools. Click yes to that prompt and you should be all set. </p>
+            </p>
+            <br></br>
+            <h3> Next Step </h3>
+            <p>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;After the application is installed, the application will bring you to the home screen. If you've use the application for the first time, it will greet you with "Welcome [unknown]". You will have the option to enter your name so that the next time you open the app, it will say "Welcome "your name"". The process to change your name is right under the greeting. Just type your name and press update. You should see the change in greeting immediately. 
+            </p>
+            <p>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This application currently have four tabs. Home, Settings, Contacts and Doctors. To set the upper and lower bound that the device should notified you or your contacts and doctors about, go to the settings tab and enter your desire bounds accordingly and press the save button.
+            </p>
+            <p>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In both the Contacts and Doctors tab, you can add, remove or edit the contacts and doctors that you want. At the start, your contact list will be blank as there are no contacts associated with your phone. To add a contact, tap the Add button on the upper left hand corner which will bring you to another page where you can add the contact's name and his/her phone number. The you can select the different notifications that your contact will get if you fail to meet the bounds that you've set. 
+            </p>
+            <p>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;When the contact is created, it will show on the contact list. You can swipe left on the contact to reveal two options - Edit and Delete. As the name suggest, you can tap either one of them to accomplish what you need to do. As for the doctor's tab, everything that you know how to do for the contacts right now is the same for the doctors. However, the notifications options that you see in contacts are not within the doctors.
+            </p>
+            <br></br>
+            <h3> Maintenance </h3>
+            <p>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The application must be used wifi or cellular data. With that said, there needs to be servers that the application can get it's data from and send data to. A database and a twilio server. Within the source code, there is a file call database that contains a SQL file to create the inital database. Just set up the MySQL database and run the SQL file using the database. Within that database folder, there are also many other folder such as contact, doctors, notifications etc. Drag these folders into another folder (whatever you decide to name it) and dump that folder on to the server where you can accesses it through URL. These are php database queries that the app uses to access the data. You will need to modified the URL that the application is pulling its request from. As with setting up the twilio server, instructions can be found <a href="http://www.twilio.com/docs/quickstart/php/ios-client/setup"> <b>HERE</b></a>
+
+            </p>
+
+
+        </div>
+            <br></br>
+            <br></br>
+ 	</div>
+
+</body>
+</html>

@@ -128,15 +128,14 @@ letter-spacing:-1px;
 color:#FFFFFF;
 }
 
-
 .contentText
 {
 width:680px;
 padding-left:30px;
 padding-right:30px;
-font-size:13px;
+font-size:14px;
 color:#FFFFFF;
-line-height:30px;
+/*line-height:20px;*/
 }
 
 a
