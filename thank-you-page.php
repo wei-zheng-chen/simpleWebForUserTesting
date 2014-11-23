@@ -23,8 +23,10 @@
         </div>
 
 
-        <div class="contentTitle"><h1>Thank you for providing us feedback on our application!</h1></div>
-        <a href="Suggestions.php"> <h1> Click here to return back to suggestions or click the navigation bar to go to another page</a>
+        <h1>Thank you for providing us feedback on our application!</h1>
+	<br> </br>
+	<div class="contentText">
+        <a href="Suggestions.php"> <b> Click here to return back to suggestions or click the navigation bar to go to another page</b></a></div>
  
         </div>
         <br></br>

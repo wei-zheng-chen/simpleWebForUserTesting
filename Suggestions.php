@@ -26,9 +26,10 @@
             <p> 
                 If you have addition ideas or features or even bad criticism about the application that you want us to work on, feel free to type out your desires on the box below and we'll get to it. 
             </p>
-
-            <h3>Here Are The Suggestions<h3> 
-            <?php
+	</div>
+            <div class="contentTitle"><h1>Below Are The Current Suggestions</h1></div> 
+        <div class="contentText">
+		<?php
                     // Create connection
                     $con=mysqli_connect("localhost","root","bitnami","user_testing");
 
