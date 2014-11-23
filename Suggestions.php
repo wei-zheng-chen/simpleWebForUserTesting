@@ -37,8 +37,7 @@
                         echo "Failed to connect to MySQL: " . mysqli_connect_error();
                     }
 
-                    $sql = "SELECT suggestion 
-                            FROM suggestions"
+                    $sql = "SELECT suggestion FROM suggestions";
 
                     // Check if there are results
                     if ($result = mysqli_query($con, $sql)){
@@ -57,7 +56,7 @@
             ?>
             <ul>
             <?php
-                    foreach $resultArray as $value{ 
+                    foreach ($resultArray as $value) { 
             ?>
                     <li> <?=value?> </li>
 
