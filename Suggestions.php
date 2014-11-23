@@ -29,7 +29,7 @@
 
 
             <?php
-                if(isset($_POST['BtnSubmit'])){
+                if(isset($_POST['submit'])){
                     // Create connection
                     $con=mysqli_connect("localhost","root","bitnami","user_testing");
 
@@ -54,14 +54,14 @@
                 }
             ?>
 
-            <form name="suggestionForm" action="submitButton.php" method="post">
+            <form name="suggestionForm" action="Suggestions.php" method="post">
                     <b> Type you Suggestions Below: <b/>
                     <br><br/>
                     <textarea name="suggestionBox" maxlength="2800" rows="10" cols="104" placeholder="Start typing here"></textarea> 
                     <br><br/>
-                    <input name="BtnSubmit" type="submit" value="Submit" />
+                    <input name="submit" type="submit" value="submit" />
             </form>
-            
+
         </div>
 
             <br></br>
