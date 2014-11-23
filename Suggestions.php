@@ -54,17 +54,17 @@
                     }
                     mysqli_close($con);
             ?>
-            <ul>
+            <ol>
             <?php
                     foreach ($resultArray as $value) { 
             ?>
-                    <li> <?=$value?> </li>
+                    <li> <?=echo $value; ?> </li>
 
 
             <?php
                     }
             ?>
-            </ul>
+            </ol>
 
 
 
