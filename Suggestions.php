@@ -56,13 +56,13 @@
             ?>
             <ol>
             <?php
-                    foreach ($resultArray as $value) { 
+                    foreach ($resultArray as $value):
             ?>
-                    <li> <?=echo $value; ?> </li>
+                    <li> <?php echo $value; ?> </li>
 
 
             <?php
-                    }
+                    endforeach
             ?>
             </ol>
 
