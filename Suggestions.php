@@ -44,18 +44,19 @@
                         // If so, then create a results array and a temporary one
                         // to hold the data
                         $resultArray = array();
-                        $tempArray = array();
+                    //    $tempArray = array();
                         // Loop through each row in the result set
                         while($row = $result->fetch_object()){
                             // Add each row into our results array
-                            $tempArray = $row;
-                            array_push($resultArray, $tempArray);
+                            $resultArray[] = $row->suggestion;
+                      //      array_push($resultArray, $tempArray);
                         }
                     }
                     mysqli_close($con);
             ?>
             <ol>
             <?php
+		//	var_dump($resultArray);
                     foreach ($resultArray as $value):
             ?>
                     <li> <?php echo $value; ?> </li>
@@ -65,12 +66,14 @@
                     endforeach
             ?>
             </ol>
+	    <br></br>
 
 
 
             <?php
                 if(isset($_POST['submit'])){
-                    // Create connection
+                    
+		   // Create connection
                     $con=mysqli_connect("localhost","root","bitnami","user_testing");
 
                     // Check connection
@@ -86,10 +89,11 @@
                     } else {
                         echo "Error: " . $sql . "<br>" . $con->error;
                     }
-
                     mysqli_close($con);
+		    header('Location: thank-you-page.php');
                 }
             ?>
+
 
             <form name="suggestionForm" action="Suggestions.php" method="post">
                     <b> Type you Suggestions Below: <b/>
