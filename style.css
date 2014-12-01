@@ -148,6 +148,10 @@ a:hover
 border-bottom:1px dotted #F1F3F8;
 }
 
+a:visited
+{
+	color: blue;
+}
 
 #footer {
 width: 750px;
