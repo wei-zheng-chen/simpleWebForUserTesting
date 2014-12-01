@@ -124,7 +124,7 @@ padding-top:8px;
 font-size:21px;
 font-weight:bold;
 letter-spacing:-1px;
-color:#FFFFFF;
+color:#000000;
 }
 
 .contentText
@@ -133,7 +133,7 @@ width:680px;
 padding-left:30px;
 padding-right:30px;
 font-size:14px;
-color:#FFFFFF;
+color:#000000;
 /*line-height:20px;*/
 }
 
